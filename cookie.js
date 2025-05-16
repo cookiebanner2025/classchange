@@ -2202,14 +2202,14 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
     }
 
-    .main-accept-btn {
+    .accept-btn {
         background-color: ${config.buttonStyle.accept.background};
         color: ${config.buttonStyle.accept.color};
         border: ${config.buttonStyle.accept.border};
         box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
     }
 
-    .main-accept-btn:hover {
+    .accept-btn:hover {
         background-color: ${config.buttonStyle.accept.hover.background};
         color: ${config.buttonStyle.accept.hover.color};
         transform: ${config.buttonStyle.accept.hover.transform};
