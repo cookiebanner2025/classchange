@@ -2028,7 +2028,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     <div id="cookieConsentBanner" class="cookie-consent-banner">
         <div class="cookie-consent-container">
             ${languageSelector}
-            <div class="cookie-consent-content">
+            <div class="main-cookie-consent-content">
                 <h2>${lang.title}</h2>
                 <p>${lang.description}</p>
                 <a href="${config.privacyPolicyUrl}" class="privacy-policy-link">${lang.privacy}</a>
@@ -2126,7 +2126,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         display: block;
     }
 
-    .cookie-consent-content h2 {
+    .main-cookie-consent-content h2 {
         margin: 0 0 16px 0;
         font-size: ${config.bannerStyle.title.fontSize};
         color: ${config.bannerStyle.title.color};
@@ -2135,7 +2135,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         letter-spacing: -0.2px;
     }
 
-    .cookie-consent-content p {
+    .main-cookie-consent-content p {
         margin: 0 0 10px 0;
         font-size: ${config.bannerStyle.description.fontSize};
         color: ${config.bannerStyle.description.color};
@@ -3010,11 +3010,11 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             ${config.behavior.bannerPosition === 'left' ? 'left: 15px;' : 'right: 15px;'}
         }
         
-        .cookie-consent-content h2 {
+        .main-cookie-consent-content h2 {
             font-size: 1.1rem;
         }
         
-        .cookie-consent-content p {
+        .main-cookie-consent-content p {
             font-size: 0.85rem;
             margin-bottom: 15px;
         }
