@@ -1979,7 +1979,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         <div class="cookie-category">
             <div class="toggle-container">
                 <h3>${lang[categoryKey]}</h3>
-                <label class="toggle-switch" data-ms-consent="ad_storage">
+                <label class="main-toggle-switch" data-ms-consent="ad_storage">
                     <input type="checkbox" data-category="${category}" ${isEssential ? 'checked disabled' : ''}>
                     <span class="toggle-slider"></span>
                 </label>
@@ -2384,14 +2384,14 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         font-weight: ${config.categoryStyle.title.fontWeight};
     }
 
-    .toggle-switch {
+    .main-toggle-switch {
         position: relative;
         display: inline-block;
         width: ${config.toggleStyle.size};
         height: ${config.toggleStyle.height};
     }
 
-    .toggle-switch input {
+    .main-toggle-switch input {
         opacity: 0;
         width: 0;
         height: 0;
