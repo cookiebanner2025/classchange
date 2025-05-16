@@ -185,15 +185,15 @@ geoConfig: {
         fontSize: '14px',
         transition: 'all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)',
         
-        accept: {
-            background: '#2ecc71',
-            color: '#ffffff',
-            border: '1px solid #2ecc71',
-            hover: {
-                background: '#27ae60',
-                color: '#ffffff',
-                transform: 'translateY(-1px)'
-            }
+       accept: {
+    background: '#2ecc71 !important',
+    color: '#ffffff !important',
+    border: '1px solid #2ecc71 !important',
+    hover: {
+        background: '#27ae60 !important',
+        color: '#ffffff !important',
+        transform: 'translateY(-1px) !important'
+    }
         },
         
         reject: {
@@ -2202,19 +2202,19 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         box-shadow: 0 2px 8px rgba(231, 76, 60, 0.15);
     }
 
-    .accept-btn {
-        background-color: ${config.buttonStyle.accept.background};
-        color: ${config.buttonStyle.accept.color};
-        border: ${config.buttonStyle.accept.border};
-        box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
-    }
+ .main-accept-button {
+    background-color: ${config.buttonStyle.accept.background};
+    color: ${config.buttonStyle.accept.color};
+    border: ${config.buttonStyle.accept.border};
+    box-shadow: 0 2px 12px rgba(46, 204, 113, 0.3);
+}
 
-    .accept-btn:hover {
-        background-color: ${config.buttonStyle.accept.hover.background};
-        color: ${config.buttonStyle.accept.hover.color};
-        transform: ${config.buttonStyle.accept.hover.transform};
-        box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
-    }
+.main-accept-button:hover {
+    background-color: ${config.buttonStyle.accept.hover.background};
+    color: ${config.buttonStyle.accept.hover.color};
+    transform: ${config.buttonStyle.accept.hover.transform};
+    box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
+}
 
     .save-btn {
         background-color: ${config.buttonStyle.save.background};
