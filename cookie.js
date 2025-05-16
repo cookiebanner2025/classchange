@@ -2036,7 +2036,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             <div class="all-cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
                 <button id="adjustConsentBtn" class="cookie-btn adjust-btn">${lang.customize}</button>
-                <button id="rejectAllBtn" class="cookie-btn reject-btn">${lang.reject}</button>
+                <button id="rejectAllBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
             </div>
         </div>
     </div>
@@ -2189,13 +2189,13 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     }
 
-    .reject-btn {
+    .main-reject-btn {
         background-color: ${config.buttonStyle.reject.background};
         color: ${config.buttonStyle.reject.color};
         border: ${config.buttonStyle.reject.border};
     }
 
-    .reject-btn:hover {
+    .main-reject-btn:hover {
         background-color: ${config.buttonStyle.reject.hover.background};
         color: ${config.buttonStyle.reject.hover.color};
         transform: ${config.buttonStyle.reject.hover.transform};
