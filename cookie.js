@@ -2062,7 +2062,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                 </div>` : ''}
                 <div class="modal-buttons-container">
                     <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
-                    <button id="saveSettingsBtn" class="cookie-btn save-btn">${lang.save}</button>
+                    <button id="saveSettingsBtn" class="cookie-btn main-save-btn">${lang.save}</button>
                     <button id="rejectAllSettingsBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
                 </div>
             </div>
@@ -2216,13 +2216,13 @@ function injectConsentHTML(detectedCookies, language = 'en') {
     box-shadow: 0 4px 16px rgba(46, 204, 113, 0.4);
 }
 
-    .save-btn {
+    .main-save-btn {
         background-color: ${config.buttonStyle.save.background};
         color: ${config.buttonStyle.save.color};
         border: ${config.buttonStyle.save.border};
     }
 
-    .save-btn:hover {
+    .main-save-btn:hover {
         background-color: ${config.buttonStyle.save.hover.background};
         color: ${config.buttonStyle.save.hover.color};
         transform: ${config.buttonStyle.save.hover.transform};
