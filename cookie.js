@@ -1798,7 +1798,7 @@ function changeLanguage(languageCode) {
     if (banner) {
         banner.querySelector('h2').textContent = lang.title;
         banner.querySelector('p').textContent = lang.description;
-        banner.querySelector('.privacy-policy-link').textContent = lang.privacy;
+        banner.querySelector('.main-privacy-policy-link').textContent = lang.privacy;
         banner.querySelector('#acceptAllBtn').textContent = lang.accept;
         banner.querySelector('#adjustConsentBtn').textContent = lang.customize;
         banner.querySelector('#rejectAllBtn').textContent = lang.reject;
@@ -2031,7 +2031,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             <div class="main-cookie-consent-content">
                 <h2>${lang.title}</h2>
                 <p>${lang.description}</p>
-                <a href="${config.privacyPolicyUrl}" class="privacy-policy-link">${lang.privacy}</a>
+                <a href="${config.privacyPolicyUrl}" class="main-privacy-policy-link">${lang.privacy}</a>
             </div>
             <div class="all-cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
@@ -2142,7 +2142,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         line-height: ${config.bannerStyle.description.lineHeight};
     }
 
-    .privacy-policy-link {
+    .main-privacy-policy-link {
         color: ${config.bannerStyle.linkColor};
         text-decoration: none;
         font-size: 13px;
@@ -2152,7 +2152,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         transition: color 0.2s ease;
     }
 
-    .privacy-policy-link:hover {
+    .main-privacy-policy-link:hover {
         color: ${config.bannerStyle.linkHoverColor};
     }
 
@@ -3019,7 +3019,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             margin-bottom: 15px;
         }
         
-        .privacy-policy-link {
+        .main-privacy-policy-link {
             margin-bottom: 15px;
         }
         
