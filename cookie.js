@@ -2034,9 +2034,11 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                 <a href="${config.privacyPolicyUrl}" class="main-privacy-policy-link">${lang.privacy}</a>
             </div>
             <div class="all-cookie-consent-buttons">
-                <button id="rejectAllBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
-                <button id="adjustConsentBtn" class="cookie-btn main-adjust-button">${lang.customize}</button>
                 <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
+                <button id="adjustConsentBtn" class="cookie-btn main-adjust-button">${lang.customize}</button>
+                <button id="rejectAllBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
+                
+                
             </div>
         </div>
     </div>
@@ -2061,7 +2063,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                     <a href="#" class="see-analytics-link">${lang.seeAnalytics}</a>
                 </div>` : ''}
                  <div class="modal-buttons-container">
-                    <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-btn">${lang.accept}</button>
+                    <button id="acceptAllSettingsBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
                     <button id="saveSettingsBtn" class="cookie-btn main-save-btn">${lang.save}</button>
                     <button id="rejectAllSettingsBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
                 </div>
