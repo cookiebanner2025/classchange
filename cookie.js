@@ -2033,7 +2033,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                 <p>${lang.description}</p>
                 <a href="${config.privacyPolicyUrl}" class="privacy-policy-link">${lang.privacy}</a>
             </div>
-            <div class="cookie-consent-buttons">
+            <div class="all-cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn accept-btn">${lang.accept}</button>
                 <button id="adjustConsentBtn" class="cookie-btn adjust-btn">${lang.customize}</button>
                 <button id="rejectAllBtn" class="cookie-btn reject-btn">${lang.reject}</button>
@@ -2156,7 +2156,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         color: ${config.bannerStyle.linkHoverColor};
     }
 
-.cookie-consent-buttons {
+.all-cookie-consent-buttons {
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -2932,7 +2932,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         }
     }
 @media (min-width: 768px) {
-    .cookie-consent-buttons {
+    .all-cookie-consent-buttons {
         flex-direction: row;
     }
     .cookie-btn {
