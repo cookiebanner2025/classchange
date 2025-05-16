@@ -2035,7 +2035,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             </div>
             <div class="all-cookie-consent-buttons">
                 <button id="acceptAllBtn" class="cookie-btn main-accept-button">${lang.accept}</button>
-                <button id="adjustConsentBtn" class="cookie-btn adjust-btn">${lang.customize}</button>
+                <button id="adjustConsentBtn" class="cookie-btn main-adjust-button">${lang.customize}</button>
                 <button id="rejectAllBtn" class="cookie-btn main-reject-btn">${lang.reject}</button>
             </div>
         </div>
@@ -2176,13 +2176,13 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         letter-spacing: 0.2px;
     }
 
-    .adjust-btn {
+    .main-adjust-button {
         background-color: ${config.buttonStyle.adjust.background};
         color: ${config.buttonStyle.adjust.color};
         border: ${config.buttonStyle.adjust.border};
     }
 
-    .adjust-btn:hover {
+    .main-adjust-button:hover {
         background-color: ${config.buttonStyle.adjust.hover.background};
         color: ${config.buttonStyle.adjust.hover.color};
         transform: ${config.buttonStyle.adjust.hover.transform};
