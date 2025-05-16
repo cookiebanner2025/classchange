@@ -1939,7 +1939,7 @@ function getCookieDuration(name) {
 // Generate cookie table with mobile-friendly display
 function generateCookieTable(cookies) {
     return `
-    <table class="cookie-details-table">
+    <table class="main-cookie-details-table">
         <thead>
             <tr>
                 <th>Cookie Name</th>
@@ -1990,7 +1990,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
                     <span>Cookie Details</span>
                     <span class="toggle-details">+</span>
                 </div>
-                <div class="cookie-details-content" style="display: none;">
+                <div class="main-cookie-details-content" style="display: none;">
                     ${cookies.length > 0 ? 
                         generateCookieTable(cookies) : 
                         `<p class="no-cookies-message">No cookies in this category detected.</p>`}
@@ -2464,7 +2464,7 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         background-color: #eeeeee;
     }
 
-    .cookie-details-content {
+    .main-cookie-details-content {
         padding: 18px;
         background-color: #fafafa;
         border-top: 1px solid #e0e0e0;
@@ -2477,13 +2477,13 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         to { opacity: 1; transform: translateY(0); }
     }
 
-    .cookie-details-table {
+    .main-cookie-details-table {
         width: 100%;
         border-collapse: collapse;
         font-size: 13px;
     }
 
-    .cookie-details-table th {
+    .main-cookie-details-table th {
         text-align: left;
         padding: 10px 12px;
         background-color: #f0f0f0;
@@ -2492,21 +2492,21 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         color: ${config.bannerStyle.title.color};
     }
 
-    .cookie-details-table td {
+    .main-cookie-details-table td {
         padding: 10px 12px;
         border-bottom: 1px solid #e0e0e0;
         color: ${config.bannerStyle.description.color};
     }
 
-    .cookie-details-table tr:last-child td {
+    .main-cookie-details-table tr:last-child td {
         border-bottom: none;
     }
 
-    .cookie-details-table tr:hover {
+    .main-cookie-details-table tr:hover {
         background-color: #f5f5f5;
     }
 
-    .cookie-details-table code {
+    .main-cookie-details-table code {
         background-color: #f0f0f0;
         padding: 2px 5px;
         border-radius: 3px;
@@ -2987,13 +2987,13 @@ function injectConsentHTML(detectedCookies, language = 'en') {
         }
         
         /* Mobile cookie details */
-        .cookie-details-table {
+        .main-cookie-details-table {
             display: block;
             overflow-x: auto;
             white-space: nowrap;
         }
         
-        .cookie-details-table td {
+        .main-cookie-details-table td {
             white-space: normal;
         }
         
@@ -3061,12 +3061,12 @@ function injectConsentHTML(detectedCookies, language = 'en') {
             font-size: 1rem;
         }
         
-        .cookie-details-table {
+        .main-cookie-details-table {
             font-size: 0.8rem;
         }
         
-        .cookie-details-table th, 
-        .cookie-details-table td {
+        .main-cookie-details-table th, 
+        .main-cookie-details-table td {
             padding: 8px 10px;
         }
     }
